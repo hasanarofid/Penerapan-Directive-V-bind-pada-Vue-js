@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Penerapan v-bind pada vue js</title>
+</head>
+
+
+<body>
+    <div id="app">
+        <p>ambil gambar dengan v-bind</p>
+        <img :src="ambilgambar">
+    </div>
+
+    <div id="app2">
+        <p>Binding dengan Style</p>
+        <img :src="ambilgambar2" :style="{width : lebar +'px'}">
+    </div>
+    <style>
+        .warna {
+            color: red
+        }
+    </style>
+    <div id="app3">
+        <p>Binding dengan Class</p>
+        <b :class="ubah">Penerapan v-bind class</b>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="apps.js"></script>
+</body>
+
+</html>
